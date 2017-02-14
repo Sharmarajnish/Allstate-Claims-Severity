@@ -9,8 +9,8 @@ numpy,
 pickle, 
 sys, 
 matplotlib.pyplot,  
-hyperopt, 
-tqdm, 
+hyperopt,  
+tqdm,   
 
 Additional libraries for Neural network (Keras)
 
