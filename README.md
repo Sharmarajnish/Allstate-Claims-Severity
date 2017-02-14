@@ -16,3 +16,5 @@ Additional libraries for Neural network (Keras)
 
 Tensorflow, 
 Keras,
+
+CV score : 1106.92
