@@ -85,20 +85,6 @@ for column in list(train.select_dtypes(include=['object']).columns):
 
 
         train_test[column] = train_test[column].apply(lambda x: filter_cat(x), 1)
-#
-# train_test["cont1"] = np.sqrt(preprocessing.minmax_scale(train_test["cont1"]))
-# train_test["cont4"] = np.sqrt(preprocessing.minmax_scale(train_test["cont4"]))
-# train_test["cont5"] = np.sqrt(preprocessing.minmax_scale(train_test["cont5"]))
-# train_test["cont8"] = np.sqrt(preprocessing.minmax_scale(train_test["cont8"]))
-# train_test["cont10"] = np.sqrt(preprocessing.minmax_scale(train_test["cont10"]))
-# train_test["cont11"] = np.sqrt(preprocessing.minmax_scale(train_test["cont11"]))
-# train_test["cont12"] = np.sqrt(preprocessing.minmax_scale(train_test["cont12"]))
-#
-# train_test["cont6"] = np.log(preprocessing.minmax_scale(train_test["cont6"]) + 0000.1)
-# train_test["cont7"] = np.log(preprocessing.minmax_scale(train_test["cont7"]) + 0000.1)
-# train_test["cont9"] = np.log(preprocessing.minmax_scale(train_test["cont9"]) + 0000.1)
-# train_test["cont13"] = np.log(preprocessing.minmax_scale(train_test["cont13"]) + 0000.1)
-# train_test["cont14"] = (np.maximum(train_test["cont14"] - 0.179722, 0) / 0.665122) ** 0.25
 
 print('')
 for comb in itertools.combinations(COMB_FEATURE, 2):
